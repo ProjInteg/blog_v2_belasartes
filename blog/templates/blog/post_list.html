@@ -6,13 +6,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>APBA</title>
-        <link rel="stylesheet" href="blog_estilo.css" type="text/css" media="all">
-        <link rel="stylesheet" href="{% static 'css/blog_estilo.css' %}">
+        <link rel="stylesheet"  href="{% static 'css/blog_estilo.css' %}">
     </head>
     <body>
         <div id="borda">
             <div id="logo">
-                <p><img src="LOGO.jpg"></p>
+                <p><img src="{% static 'img/logo.jpg' %}"></p>
             </div>
             
             <div id="cabecalho">
@@ -29,11 +28,11 @@
                     </tr>
             
                     <tr>
-                        <th><a href="grade.jpg" target="_blank"> Cursos</a></th>
+                        <th><a href="{% static 'img/grade.jpg' %}" target="_blank"> Cursos</a></th>
                     </tr>
             
                     <tr>
-                        <th><a href="EVENTOS.jpg" target="_blank">Eventos</a></th>
+                        <th><a href="{% static 'img/eventos.jpg' %}" target="_blank">Eventos</a></th>
                     </tr>
 
                 </table>
@@ -44,7 +43,7 @@
                 <br>
                 <p id="texto">Desde 1942</p>
                 <br>
-                <p id="texto">Levando Arte até você</p>
+                <p id="texto">Levando a Arte até você</p>
                 <br>
                 <br>     
                 <p id="texto">Venha nos conhecer</p>
