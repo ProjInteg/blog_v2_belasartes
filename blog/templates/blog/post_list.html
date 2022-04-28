@@ -9,14 +9,13 @@
         <link rel="stylesheet"  href="{% static 'css/blog_estilo.css' %}">
     </head>
     <body>
-        <div id="borda">
+        <div class="borda">
             <div id="logo">
                 <p><img src="{% static 'img/logo.jpg' %}"></p>
             </div>
             
-            <div id="cabecalho">
-                <br>
-                <br>
+            <div class="cabecalho">
+                
                 <h1>A.P.B.A</h1>
                 <p>Associação Paulista de Belas Artes</p>
             </div>
@@ -24,34 +23,28 @@
             <div id="menu">
                 <table>
                     <tr>
-                        <th><a href="formulario.html" target="_blank">Cadastro</a></th>
+                        <th><a href="{% url 'formulario' %}" target="_blank" rel="next">Cadastro</a></th>
                     </tr>
             
                     <tr>
-                        <th><a href="{% static 'img/grade.jpg' %}" target="_blank"> Cursos</a></th>
+                        <th><a href="{% url 'curso' %}" target="_blank" rel="next"> Cursos</a></th>
                     </tr>
-            
-                    <tr>
-                        <th><a href="{% static 'img/eventos.jpg' %}" target="_blank">Eventos</a></th>
-                    </tr>
-
+                            
                 </table>
             </div>
             
             <div id="principal">
-                <br>
-                <br>
-                <p id="texto">Desde 1942</p>
-                <br>
-                <p id="texto">Levando a Arte até você</p>
-                <br>
-                <br>     
-                <p id="texto">Venha nos conhecer</p>
-                <br>
-                <p id="texto">Seja um Associado</p>
+                
+                <p class="texto">Desde 1942</p>
+               
+                <p class="texto">Levando a Arte até você</p>
+                     
+                <p class="texto">Venha nos conhecer</p>
+                
+                <p class="texto">Seja um Associado</p>
             </div>
 
-            <div id="rodape">
+            <div class="rodape">
                 <h4>Rua Conselheiro Crispiniano, 53 - 13º andar - República</h4>
                 <h4>Telefone: 11 3105-1660 / 3214-4711 / 98195-9148(whatsapp)</h4>
             </div>
