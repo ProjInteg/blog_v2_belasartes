@@ -117,7 +117,7 @@ a:hover{
     font-size: 24px;
     
     }
-    .sociais .social{
+.social{
 
         width: 40px;
         height: 40px;
@@ -130,19 +130,19 @@ a:hover{
         transition: background .3s linear;
     }
     
-    .sociais .social a{
+.social a{
     
         color: #333;
         font-size: 1.5em;
         transition: color .3s linear;
     }
     
-    .sociais .social:hover{
+.social:hover{
     
         background: #444;
     }
     
-    .sociais .social:hover a{
+.social:hover a{
     color: #fff;
     
     }	
