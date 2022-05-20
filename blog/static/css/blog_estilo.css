@@ -170,7 +170,7 @@ a:hover{
         
         .sociais .social a{
         
-            color: #333;
+            color: rgb(12, 12, 12);
             font-size: 1.5em;
             transition: color .3s linear;
         }
