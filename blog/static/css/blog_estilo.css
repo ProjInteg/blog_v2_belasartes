@@ -113,7 +113,7 @@ table {
     height: 70%;
     width:50%;
     position:absolute;
-
+}
 
 a:link, a:visited, a:active {
     text-decoration: none;
@@ -133,7 +133,8 @@ a:hover{
     font-size: 24px;
     
     }
-.social{
+
+    .social{
 
         width: 40px;
         height: 40px;
