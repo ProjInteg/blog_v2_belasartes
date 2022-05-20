@@ -140,7 +140,7 @@ a:hover{
         display: flex;
         justify-content:right;
         align-items: center;
-        background: gray;
+        background:"";
         padding: 0px 0px;
         
         }                            
