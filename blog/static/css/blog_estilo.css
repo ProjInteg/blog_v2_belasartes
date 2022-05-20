@@ -134,7 +134,8 @@ a:hover{
     
     }
 
-    .social{
+
+.social{
 
         width: 40px;
         height: 40px;
@@ -145,6 +146,7 @@ a:hover{
         border-radius: 5px;
         cursor: pointer;
         transition: background .3s linear;
+
     }
     
 .social a{

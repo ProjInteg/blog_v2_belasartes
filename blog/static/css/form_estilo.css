@@ -101,3 +101,22 @@ fieldset.grupo .campo {
 .botao {
     cursor: pointer;
 }
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    }
+
+a:visited {
+    color: #1717f5
+    }
+
+a:active {
+    color: #ffa500;
+    }
+a:hover{
+    text-decoration: underline overline;
+    color: #8b0000;
+    background-color: #ffdab9;
+    font-size: 24px;
+
+    }
