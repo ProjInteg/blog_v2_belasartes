@@ -22,7 +22,7 @@ Projeto em construçãoom/
 
 ## Links
  
-https://belasartes.herokuapp.c
+https://belasartes.herokuapp.com
  
  
 
