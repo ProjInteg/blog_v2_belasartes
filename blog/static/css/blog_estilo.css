@@ -138,6 +138,7 @@ a:hover{
 
         width: 40px;
         height: 40px;
+        right: 155px;
         text-align: center;
         line-height: 40px;
         background: #ddd;
@@ -149,14 +150,14 @@ a:hover{
     
 .social a{
     
-        color: #333;
+        color: rgb(115, 133, 23);
         font-size: 1.5em;
         transition: color .3s linear;
     }
     
 .social:hover{
     
-        background: #444;
+        background: rgb(101, 75, 10);
     }
     
 .social:hover a{
