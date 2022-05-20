@@ -141,7 +141,7 @@ a:hover{
         right: 355px;
         text-align: center;
         line-height: 40px;
-        background: #ddd;
+        background: rgb(203, 23, 23);
         margin: 10px;
         border-radius: 5px;
         cursor: pointer;
