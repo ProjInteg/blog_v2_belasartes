@@ -142,7 +142,7 @@ a:hover{
         text-align: center;
         line-height: 40px;
         background: rgb(16, 100, 24);
-        margin: 10px;
+        margin: 100px;
         border-radius: 5px;
         cursor: pointer;
         transition: background .3s linear;
