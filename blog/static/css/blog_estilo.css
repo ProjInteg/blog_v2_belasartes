@@ -134,6 +134,7 @@ a:hover{
     
     }
 
+<<<<<<< HEAD
 
 .social{
 
@@ -166,3 +167,55 @@ a:hover{
     color: #fff;
     
     }	
+=======
+    .footer{
+        width: 100%;
+        height:150px;
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        background:"";
+        padding: 0px 0px;
+        
+        }                            
+        
+        .footer h2{
+            color: rgb(24, 22, 22);
+        }
+        
+        .footer .sociais{
+        
+            display: flex;
+        
+        }
+        
+        .sociais .social{
+        
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background:"";
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background .3s linear;
+        }
+        
+        .sociais .social a{
+        
+            color: rgb(12, 12, 12);
+            font-size: 1.5em;
+            transition: color .3s linear;
+        }
+        
+        .sociais .social:hover{
+        
+            background: #444;
+        }
+        
+        .sociais .social:hover a{
+        color: #fff;
+        
+        }	
+>>>>>>> 47ca0bd9922612585bfce9b08c397a78c74bbbba
