@@ -1,4 +1,7 @@
 {% load static %}
+{% load widget_tweaks %}
+{% load bootstrap %}
+
 <!Doctype html>
 <html lang="pt-br">
   
@@ -11,48 +14,24 @@
 
     <body>
         
-        <div>
-            <h1 id="titulo">Cadastro APBA</h1>
+        <h1 id="titulo">Cadastro APBA</h1>
             <br>
-        </div>
 
-        <form>
-
-            <div class="campos">
-
-                    <label for="nassoc"><strong>Número Associado</strong></label>
-                    <input type="text" name="nassoc" id="nassoc" required>
-             </div>
-
-            <div class="campo">
-                    <label for="nome"><strong>Nome Completo</strong></label>
-                    <input type="text" name="nome" id="nome" required>
-            </div>
-
-
-            <fieldset class="grupo">
-                <div class="campo">
-                    <label for="fone"><strong>Telefone</strong></label>
-                    <input type="tel" name="fone" id="fone" required>
-                </div>
-                <div class="campo">
-                    <label for="cel"><strong>Celular</strong></label>
-                    <input type="tel" name="cel" id="cel" required>
-                </div>
-
-            </fieldset>
-
-                <div class="campo">
-                        <label for="email"><strong>Email</strong></label>
-                        <input type="email" name="email" id="email" required>
-                </div>
-
+        <form action=" " method="post">
+            {% csrf_token %}
+            <!--{{ form.as_p }}--!>
+            {{ form|bootstrap }}
+            <div>
             <a href="{% url 'post_list' %}" rel="prev">Voltar</a>
+
             <button class="botao" type="submit" onsubmit="">Enviar</button>
+            </div>
 
         </form>
 
-    
+        <script src="{% static 'js/jquery-3.6.0.min.js' %}"> </script>
+        <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+        <script src="{% static 'js/mascara.js' %}"></script>
        
     </body>
 

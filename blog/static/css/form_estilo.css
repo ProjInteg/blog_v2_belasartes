@@ -15,10 +15,7 @@ p {
     font-family: sans-serif;
     font-size: 1em;
     color: #260401;
-}
 
-fieldset {
-    border: 0;
 }
 
 body{
@@ -30,76 +27,6 @@ body{
     margin-top: 2%;
     justify-content: center;
 
-}
-
-Input, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #592A0E;
-    border-radius: 5px;
-}
-
-
-.campo, .campos{
-    margin-bottom: 1em;
-
-}
-
-
-.campo label {
-    margin-bottom: 0.2em;
-    color: #592A0E;
-    display: block;
-}
-
-
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
-
-}
-
-.campos input[type="text"] {
-    padding: 0.2em;
-    width: 20%;
-    border: 1px solid #592A0E;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display:inline;
-}
-.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
-    padding: 0.2em;
-    width: 70%;
-    border: 1px solid #592A0E;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
-}
-
-
-
-.botao {
-    font-size: 1.2em;
-    background: #592A0E;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position:sticky;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
-.botao:hover {
-    background: #A66D3C;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-.botao {
-    cursor: pointer;
 }
 
 a:link, a:visited, a:active {
@@ -120,3 +47,56 @@ a:hover{
     font-size: 24px;
 
     }
+
+
+.botao {
+    font-size: 1.2em;
+    background: #592A0E;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:sticky;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #A66D3C;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+div {
+    margin: 20px;
+}
+
+.id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
+    height: 20px;
+}
+
+.id-nome {
+    width: 50%;
+}
+
+.borda {
+    height: 950px;
+    width: 920px;
+    margin: 0 auto;
+    border: 5px;
+    border-color:rgba(51, 5, 5, 0.877);
+    border-radius: 10px;
+    border-style: double;
+    }
+
+
+
+
+
+
+
