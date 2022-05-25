@@ -74,27 +74,7 @@ fieldset.grupo .campo {
     display: block;
 }
 
-#endereco, #conjuge {
-    margin-right: 15em;
-}
 
-#numero {
-    margin-left: -2em;
-}
-
-#bairro, #prof{
-    margin-right: 10em;
-}
-
-#rg, #cpf, #grau{
-    margin-right: 6em;
-}
-
-
-#email {
-    margin-right: 4em;
-    margin-left: -1.5em;
-}
 
 .botao {
     font-size: 1.2em;

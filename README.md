@@ -1,7 +1,6 @@
 # blog_v2_belasartes
 Cadastro de asssociados.
-Projeto em construção
- 
+Projeto em construçãoom/ 
  
 ## Tecnologia 
  
@@ -23,6 +22,7 @@ Projeto em construção
 
 ## Links
  
+https://belasartes.herokuapp.com
  
  
 

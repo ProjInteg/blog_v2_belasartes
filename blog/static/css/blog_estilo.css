@@ -28,7 +28,7 @@
 }
 
 #principal {
-    height: 500px;
+    height: 300px;
     width: 700px;
     margin-left: 210px;
     margin-right: 10px;
@@ -51,8 +51,9 @@ td {
 
 .rodape{
     height: 50px;
-    width: 900px;
-    margin: 0 auto;
+    width: 750px;
+    right: 50px;
+
 }
 
 body {
@@ -79,7 +80,7 @@ h1, p, th, #semana {
 
 h4 {
     color: black;
-    text-align: center;
+    text-align: right;
 
 }
 
@@ -89,7 +90,7 @@ table {
       }
 
 .borda {
-    height: 780px;
+    height: 950px;
     width: 920px;
     margin: 0 auto;
     border: 5px;
@@ -98,6 +99,21 @@ table {
     border-style: double;
     }
 
+.map-responsive {
+    overflow:visible;
+    padding-bottom: 30%;
+    position: relative;
+    height: 75px;
+    left: 220px;
+
+}
+.map-responsive iframe {
+    left: 100px;
+    top:50px;
+    height: 70%;
+    width:50%;
+    position:absolute;
+}
 
 a:link, a:visited, a:active {
     text-decoration: none;
@@ -118,3 +134,33 @@ a:hover{
     
     }
 
+    .social{
+
+        width: 40px;
+        height: 40px;
+        right: 155px;
+        text-align: center;
+        line-height: 40px;
+        background: #ddd;
+        margin: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background .3s linear;
+    }
+    
+.social a{
+    
+        color: rgb(115, 133, 23);
+        font-size: 1.5em;
+        transition: color .3s linear;
+    }
+    
+.social:hover{
+    
+        background: rgb(101, 75, 10);
+    }
+    
+.social:hover a{
+    color: #fff;
+    
+    }	
