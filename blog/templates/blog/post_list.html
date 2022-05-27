@@ -19,6 +19,10 @@
                 
                 <h1>A.P.B.A</h1>
                 <p>Associação Paulista de Belas Artes</p>
+                 <div id="btn-container">
+                    <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                    <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+                </div>
             </div>
             
             <div id="menu">
@@ -58,12 +62,12 @@
                
             <div class="footer">
                 <h2>Nossas redes sociais:</h2>
-                
+
                 <div class="sociais">
                     <div class="social">
                         <a href=" https://wa.me/5511981959148" target="_blank" rel="external"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                         </div>
-                        
+
                         <div class="social">
                         <a href="https://pt-br.facebook.com/belasartesapba/" target="_blank" rel="external"><i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
@@ -73,10 +77,11 @@
   
         </div>
         
-        <script>
+        <!--<script>
             var nome= window.prompt('Qual é o seu nome?')
             window.alert('Seja muito bem vindo ao site,'+ nome + '!')
             
-        </script>
+        </script>--!>
+        <script src="{% static 'js/fonte.js' %}"></script>
     </body>
 </html>

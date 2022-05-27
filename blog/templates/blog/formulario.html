@@ -13,9 +13,12 @@
     </head>
 
     <body>
-        
-        <h1 id="titulo">Cadastro APBA</h1>
-            <br>
+        <div class="borda">
+            <h1 id="titulo">Cadastro APBA</h1>
+            <div id="btn-container">
+                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+            </div>
 
         <form action=" " method="post">
             {% csrf_token %}
@@ -31,7 +34,8 @@
         <script src="{% static 'js/jquery-3.6.0.min.js' %}"> </script>
         <script src="{% static 'js/jquery.mask.min.js' %}"></script>
         <script src="{% static 'js/mascara.js' %}"></script>
-       
+        <script src="{% static 'js/fonte.js' %}"></script>
+        </div>
     </body>
 
 </html>
