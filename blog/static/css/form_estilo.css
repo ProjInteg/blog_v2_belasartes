@@ -30,14 +30,14 @@ body{
 }
 
 .borda {
-    height: 90%;
-    width: 60%;
+    height: 800px;
+    width: 500px;
     margin-left: 20px;
     border: 5px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
-
+}
 button {
     font-size: 16px;
 }
@@ -102,13 +102,14 @@ div {
 }
 
 .borda {
-    height: 950px;
-    width: 920px;
-    margin: 0 auto;
+    height: 900px;
+    width: 700px;
     border: 5px;
+    margin-left: 20px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
+    align-item: center;
     }
 
 

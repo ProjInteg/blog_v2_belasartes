@@ -20,21 +20,21 @@
                 <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
             </div>
 
-        <form action=" " method="post">
-            {% csrf_token %}
-            {{ form|bootstrap }}
-            <div>
-            <a href="{% url 'post_list' %}" rel="prev">Voltar</a>
+            <form action=" " method="post">
+                {% csrf_token %}
+                {{ form|bootstrap }}
+                <div>
+                <a href="{% url 'post_list' %}" rel="prev">Voltar</a>
 
-            <button class="botao" type="submit" onsubmit="">Enviar</button>
-            </div>
+                <button class="botao" type="submit" onsubmit="">Enviar</button>
+                </div>
 
-        </form>
+            </form>
 
-        <script src="{% static 'js/jquery-3.6.0.min.js' %}"> </script>
-        <script src="{% static 'js/jquery.mask.min.js' %}"></script>
-        <script src="{% static 'js/mascara.js' %}"></script>
-        <script src="{% static 'js/fonte.js' %}"></script>
+            <script src="{% static 'js/jquery-3.6.0.min.js' %}"> </script>
+            <script src="{% static 'js/jquery.mask.min.js' %}"></script>
+            <script src="{% static 'js/mascara.js' %}"></script>
+            <script src="{% static 'js/fonte.js' %}"></script>
         </div>
     </body>
 
