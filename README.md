@@ -1,6 +1,6 @@
 # blog_v2_belasartes
 Cadastro de asssociados.
-Projeto em construçãoom/ 
+Projeto em construção 
  
 ## Tecnologia 
  
