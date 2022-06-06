@@ -77,11 +77,21 @@
   
         </div>
         
-        <script>
-            var nome= window.prompt('Qual é o seu nome?')
-            window.alert('Seja muito bem vindo ao site,'+ nome + '!')
+        <script language=javascript type="text/javascript">
+            now = new Date
+            if (now.getHours () >= 0 && now.getHours () < 5)
+            {window.alert ("Bom dia, seja muito bem vindo ao nosso site!")}
+                    else if (now.getHours () >= 5 && now.getHours () < 12)
+            {window.alert ("Bom dia, seja muito bem vindo ao nosso site!") }
+                    else if (now.getHours () >= 12 && now.getHours () < 18)
+            {window.alert ("Boa tarde, seja muito bem vindo ao nosso site!") }
+            else
+            {window.alert ("Boa noite, seja muito bem vindo ao nosso site!") }
             
-        </script>
+            
+            </script>
+            
+
         <script src="{% static 'js/fonte.js' %}"></script>
     </body>
 </html>
