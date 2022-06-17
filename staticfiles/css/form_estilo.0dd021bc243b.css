@@ -1,0 +1,120 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#titulo {
+    font-family: sans-serif;
+    color: #592A0E;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #260401;
+
+}
+
+body{
+    background-color:#f5e4c4;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #592A0E;
+    margin-left: 25%;
+    margin-top: 2%;
+    justify-content: center;
+
+}
+
+.borda {
+    height: 800px;
+    width: 500px;
+    margin-left: 20px;
+    border: 5px;
+    border-color:rgba(51, 5, 5, 0.877);
+    border-radius: 10px;
+    border-style: double;
+}
+button {
+    font-size: 16px;
+}
+
+#btn-container {
+    text-align: end;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    }
+
+a:visited {
+    color: #1717f5
+    }
+
+a:active {
+    color: #ffa500;
+    }
+a:hover{
+    text-decoration: underline overline;
+    color: #8b0000;
+    background-color: #ffdab9;
+    font-size: 24px;
+
+    }
+
+
+.botao {
+    font-size: 1.2em;
+    background: #592A0E;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:sticky;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #A66D3C;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+div {
+    margin: 20px;
+}
+
+.id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
+    height: 20px;
+}
+
+.id-nome {
+    width: 50%;
+}
+
+.borda {
+    height: 900px;
+    width: 700px;
+    border: 5px;
+    margin-left: 20px;
+    border-color:rgba(51, 5, 5, 0.877);
+    border-radius: 10px;
+    border-style: double;
+    align-item: center;
+    }
+
+
+
+
+
+
+
