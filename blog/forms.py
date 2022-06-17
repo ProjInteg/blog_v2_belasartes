@@ -19,7 +19,7 @@ class AssociadoForm(forms.ModelForm):
 # esse bloco faz as validações
     def clean_nome(self):
         nome = self.cleaned_data['nome']
-        if len(nome) < 5:
+        if len(nome) < 9:
             raise ValidationError("Digite seu nome completo")
         else:
             return nome

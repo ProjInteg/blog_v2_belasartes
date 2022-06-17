@@ -20,7 +20,7 @@ class Post(models.Model):
 
 class Associado(models.Model):
     numero_associado = models.CharField(max_length=10)
-    nome = models.CharField(max_length=30)
+    nome = models.CharField(max_length=40)
     telefone = models.CharField(max_length=15, blank=True)
     celular = models.CharField(max_length=15)
     email = models.EmailField(null=False)
