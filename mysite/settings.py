@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-            'ENGINE': 'django.db.backends.mysql',
+            'ENGINE': 'mysql.connector.django',
             'NAME': 'heroku_5f43538c673bfde',
             'USER': 'b2c05faf4c2dfd',
             'PASSWORD': 'f3f5d418',
