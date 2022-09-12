@@ -9,42 +9,132 @@
     <link rel="stylesheet" href="{% static 'css/blog_estilo.css' %}">
 </head>
 <body>
-    <div id=central>
-        <div class="borda">
-            <div id="logo">
-                <p><img src="{% static 'img/logo.jpg' %}"></p>
-            </div>
-        <div class="cabecalho">
-            <h1> Cursos APBA </h1>
+    <div class="borda">
+        <header>
+            <picture>
+                <source media="(max-width: 800px)" srcset="{% static 'img/logo_p.jpg' %}">
+                <img src="{% static 'img/logo.jpg' %}" alt="Logotipo APBA">
+             </picture>
+                <h1> Cursos APBA </h1>
+
             <div id="btn-container">
                 <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
                 <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
             </div>
-        </div>
-
-        <div id="aula" >
+        </header>
+        <main>
             <table>
-                <tr id="semana">
-                    <td>Segunda-feira</td>
-                    <td>Terça-feira</td>
-                    <td>Quarta-feira</td>
-                    <td>Quinta-feira</td>
-                    
-                </tr>
-                <tr>
-                    <td>Fábio Haibara <br> 9:00 às 12:00 hs <br> 14:00 às 17:00hs <br> Desenho e Pintura - Nat. Morta</td>
-                    <td>José Carlos Acerbi <br> 14:00 às 17:00 e 17:30  hs. <br> Desenho e Pintura à óleo <br>Aquarela <br>Todos os gêneros e temas</td>
-                    <td>Mario jardim <br> Terceira Idade <br>13:00 às 15:00 hs. <br> Desenho e Pintura</td>
-                    <td>Modelo Vivo <br>14:30 às 16:30 hs. <br>Orientador: Ricardo Machado</td>
-                </tr>
-                <tr>
-                    <td>José Carlos Acerbi  <br> 14:00 às 17:00 hs <br> Desenho e Pintura <br> Todos os temas</td>
-                    <td>Carmélio Gentil <br>13:00 às 16:00 hs. <br> Desenho Pintura (OST) <br> Aquarela</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Professor</th>
+                        <th>Horário</th>
+                        <th>Tema</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="3">Segunda-feira</th>
+                        <td rowspan="3"> Fábio Haibara</td>
+                        <td>9:00 às 12:00 hs</td>
+                        <td rowspan="3">Desenho e Pintura (todos os temas e Gêneros, ênfase em Natureza Morta)</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 às 17:00hs</td>
+                    </tr>
+                    <tr>
+                        <td>18:00 às 20:30 hs.</td>
+                    </tr>
+        
+                    <tr>
+                        <th rowspan="5
+                        ">Terça-feira</th>
+                        <td rowspan="2">José Carlos Acerbi</td>
+                        <td>14:00 às 17:00 hs</td>
+                        <td rowspan="2">Desenho e Pintura - Óleo e Aquarela (todos os temas e gêneros)</td>
+                    </tr>
+                    <tr>
+                        <td>17:30 às 20:00 hs</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Carmelo Gentil</td>
+                        <td>9:30 às 12:30 hs.</td>
+                        <td rowspan="2">Desenho e Pintura (todos os temas e gêneros)</td>
+                    </tr>
+                    <tr>
+                        <td>13:30 às 16:30 hs.</td>
+                    </tr>
+                    <tr>
+                        <td>Lamberto Fadel</td>
+                        <td>17:00 às 20:00 hs</td>
+                        <td>Retrato com Modelo Vivo</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Quarta-feira</th>
+                        <td>Ana Canfora</td>
+                        <td>13:00 às 16:00 hs</td>
+                        <td>Desenho e Pintura (3ª idade, todos os temas, ênfase em Paisagem)</td>
+                    </tr>
+                    <tr>
+                        <td>Fábio Haibara</td>
+                        <td>9:00 às 12:00 hs.</td>
+                        <td>Desenho e Pintura (todos os temas e gêneros, ênfase em Natureza Morta</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Quinta-feira</th>
+                        <td>Ademir Cruz</td>
+                        <td>9:00 às 12:00 hs.</td>
+                        <td>Retrato</td>
+                    </tr>
+                    <tr>
+                        <td>Carmelo Gentil</td>
+                        <td>9:30 às 12:30 hs.</td>
+                        <td>Desenho e Pintura (todos os temas e gêneros)</td>
+                    </tr>
+                    <tr>
+                        <td>Sueli Finoto</td>
+                        <td>14:00 às 17:00 hs.</td>
+                        <td>Curso de Cerâmica</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Sexta-feira</th>
+                        <td>Ademir Cruz</td>
+                        <td>9:00 às 12:00 hs.</td>
+                        <td>Desenho e Pintura (todas as técnicas)</td>
+                    </tr>
+                    <tr>
+                        <td>Luiz Zeminian</td>
+                        <td>9:30 às 12:30 hs.</td>
+                        <td>Aquarela (aula quinzenal)</td>
+                    </tr>
+                    <tr>
+                        <td>João Alves</td>
+                        <td>17:30 às 20:30 hs.</td>
+                        <td>Desenho e Pintura</td>
+                    </tr>
+                    <tr>
+                        <th>Sábado</th>
+                        <td>João Alves</td>
+                        <td>9:00 às 12:00 hs.</td>
+                        <td>Desenho e Pintura (óleo, aquarela e carvão, todos os temas)</td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">SESSÃO MODELO VIVO</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Quarta-feira</th>
+                        <th colspan="2">Quinta-feira</th>
+                    </tr>
+                        <td colspan="2">14:30 às 16:30 hs.</td>
+                        <td colspan="2">14:30 às 16:30hs e das18:30 às 20:30 hs.</td>
+                    </tr>
+                </tbody>
             </table>
+            
             <p><a href="{% url 'post_list' %}" rel="prev">Voltar</a></p>
-        </div>
+        </main>
     </div>
+    
     <script src="{% static 'js/fonte.js' %}"></script>
  
 </body>
