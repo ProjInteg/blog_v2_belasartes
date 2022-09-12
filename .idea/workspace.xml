@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c9e6638-b832-4d82-a9fe-de7e15a231eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/Tests/_init_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/Tests/test_forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/Tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/Tests/test_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog_v2_belasartes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog_v2_belasartes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/static/css/blog_estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/blog_estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/css/form_estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/css/form_estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/projeto-env",
+    "last_opened_file_path": "C:/projeto-env/APBA/5/blog_v2_belasartes",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>

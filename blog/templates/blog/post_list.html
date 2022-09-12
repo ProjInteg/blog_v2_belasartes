@@ -11,85 +11,68 @@
     </head>
     <body>
         <div class="borda">
-            <div id="logo">
-                <p><img src="{% static 'img/logo.jpg' %}"></p>
-            </div>
-            
-            <div class="cabecalho">
-                
-                <h1>A.P.B.A</h1>
-                <p>Associação Paulista de Belas Artes</p>
-                 <div id="btn-container">
+            <header>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="{% static 'img/logo.jpg' %}">
+                    <img src="{% static 'img/logo.jpg' %}">
+                </picture>
+                    <h1>A.P.B.A</h1>
+                    <p>Associação Paulista de Belas Artes</p>
+
+                <div id="btn-container">
                     <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
                     <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
                 </div>
-            </div>
-            
-            <div id="menu">
-                <table>
-                    <tr>
-                        <th><a href="{% url 'formulario' %}" target="_self" rel="next">Cadastro</a></th>
-                    </tr>
-            
-                    <tr>
-                        <th><a href="{% url 'curso' %}" target="_self" rel="next"> Cursos</a></th>
-                    </tr>
+            </header>
+            <main>
+                <section id="menu">
+                    <a href="{% url 'formulario' %}" target="_self" rel="next">Cadastro</a>
+                    <a href="{% url 'curso' %}" target="_self" rel="next"> Cursos</a>
+                </section>
 
-                </table>
-                <div class="footer">
+                <section id="principal">
+                    <p>Desde 1942</p>
+                    <p>Levando a Arte até você</p>
+                    <p>Venha nos conhecer</p>
+                    <p>Seja um Associado</p>
+                </section>
+                <section class="redes">
                     <h2>Nossas redes sociais:</h2>
-                <div class="sociais">
-                    <div class="social">
-                        <a href=" https://wa.me/5511981959148" target="_blank" rel="external"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+
+                    <div class="sociais">
+                        <div class="social">
+                            <a href=" https://wa.me/5511981959148" target="_blank" rel="external"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="social">
+                        <a href="https://pt-br.facebook.com/belasartesapba/" target="_blank" rel="external"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        </div>
                     </div>
+                </section>
+                <section id="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.613080002265!2d-46.642434784609286!3d-23.54641486692657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58522e32f11f%3A0x7e5fa1e468dbad47!2sAPBA%20-%20Associa%C3%A7%C3%A3o%20Paulista%20Belas%20Artes!5e0!3m2!1spt-BR!2sbr!4v1652983551510!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+            </main>
 
-                    <div class="social">
-                        <a href="https://pt-br.facebook.com/belasartesapba/" target="_blank" rel="external"><i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-            <div id="principal">
-                
-                <p class="texto">Desde 1942</p>
-               
-                <p class="texto">Levando a Arte até você</p>
-                     
-                <p class="texto">Venha nos conhecer</p>
-                
-                <p class="texto">Seja um Associado</p>
-            </div>
-
-            <div class="map-responsive">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.613080002265!2d-46.642434784609286!3d-23.54641486692657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58522e32f11f%3A0x7e5fa1e468dbad47!2sAPBA%20-%20Associa%C3%A7%C3%A3o%20Paulista%20Belas%20Artes!5e0!3m2!1spt-BR!2sbr!4v1652983551510!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-            <div class="rodape">
-                <h4>Rua Conselheiro Crispiniano, 53 - 13º andar - República</h4>
-                <h4>Telefone: 11 3105-1660 / 3214-4711 / 98195-9148(whatsapp)</h4>
-            </div>
-               
-
-        </div>
-        
-        <script language=javascript type="text/javascript">
-            now = new Date
-            if (now.getHours () >= 0 && now.getHours () < 5)
-            {window.alert ("Bom dia, seja muito bem vindo ao nosso site!")}
-                    else if (now.getHours () >= 5 && now.getHours () < 12)
-            {window.alert ("Bom dia, seja muito bem vindo ao nosso site!") }
-                    else if (now.getHours () >= 12 && now.getHours () < 18)
-            {window.alert ("Boa tarde, seja muito bem vindo ao nosso site!") }
-            else
-            {window.alert ("Boa noite, seja muito bem vindo ao nosso site!") }
-            
-            
+            <script language=javascript type="text/javascript">
+                now = new Date
+                if (now.getHours () >= 0 && now.getHours () < 5)
+                {window.alert ("Bom dia, seja muito bem vindo ao nosso site!")}
+                        else if (now.getHours () >= 5 && now.getHours () < 12)
+                {window.alert ("Bom dia, seja muito bem vindo ao nosso site!") }
+                        else if (now.getHours () >= 12 && now.getHours () < 18)
+                {window.alert ("Boa tarde, seja muito bem vindo ao nosso site!") }
+                else
+                {window.alert ("Boa noite, seja muito bem vindo ao nosso site!") }
             </script>
+                
+    
+            <script src="{% static 'js/fonte.js' %}"></script>
             
-
-        <script src="{% static 'js/fonte.js' %}"></script>
+        <footer>
+            Rua Conselheiro Crispiniano, 53 - 13º andar - República<br>
+            Telefone: 11 3105-1660 / 3214-4711 / 98195-9148(whatsapp)
+        </footer>
+        </div>
     </body>
 </html>

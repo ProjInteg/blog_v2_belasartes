@@ -1,68 +1,20 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-opcional: 'Bebas Neue', cursive;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-
+    margin: 0px;
+    padding: 0px;
+    
 }
-#logo {
-    height: 220px;
-    width: 200px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.cabecalho {
-    height: 220px;
-    width: 700px;
-    margin-left: 210px;
-    margin-right:10px;
-    margin-top: 10px;
- }
-
-#menu {
-    height: 300px;
-    width: 200px;
-    float: left;
-    margin-left: 10px;
-}
-
-#btn-container {
-    text-align: end;
-}
-
-#principal {
-    height: 300px;
-    width: 700px;
-    margin-left: 210px;
-    margin-right: 10px;
-}
-
-.texto {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color:black;
-    vertical-align: middle;
-    line-height: 2;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-button {
-    font-size: 16px;
-}
-
-td {
-    border: 1px solid rgb(51, 5, 5, 0.877);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.rodape{
-    height: 50px;
-    width: 700px;
-    margin-left: 100px;
-
+html, body {
+    min-height: 100vh;
+    font-family: var(--font-padrao);
 }
 
 body {
@@ -71,59 +23,87 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-size: 20px;
-    }
-
-
-img {
-    opacity: 0.5;
-            
-    }
-
-
-h1, p, th, #semana {
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        text-align: center;
-        font-weight: bold;
-    }
-
-h4 {
-    color: black;
-    text-align: right;
-
 }
 
-table {
-    width:100%;
+div.borda {
+    width: 82%;
     height: 100%;
-      }
-
-.borda {
-    height: 950px;
-    width: 920px;
     margin: 0 auto;
     border: 5px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
+    
+}
+header {
+    text-align: center;
+    padding-top: 20px;
+    margin: auto;
+}   
+
+header > h1 {
+    font-family: var(--font-opcional);
+    font-size: 5vw;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+header >p {
+    padding-bottom: 50px;
+}
+
+
+img {
+    opacity: 0.5;
+    float: left;
+    margin-left: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+#btn-container {
+    text-align: end;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+}
+
+button {
+    font-size: 1.5vw;
+}
+
+#menu {
+    float: left;
+    margin-top: 10px;
+    width: 30%;
+    line-height: 3.5;
+    font-size: 2vw;
+    text-align: center;
     }
 
-.map-responsive {
-    overflow:visible;
-    padding-bottom: 30%;
-    position: relative;
-    height: 75px;
-    left: 230px;
+main {
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;  
+}
 
+#principal {
+    color:black;
+    line-height: 2;
+    font-size: 2.5vw;
+    display: block;
+    margin-left: 30%;
 }
-.map-responsive iframe {
-    left: 100px;
-    top:50px;
-    height: 70%;
-    width:50%;
-    position:absolute;
+
+#principal > p {
+    text-align: center;
+    font-weight: bold;
 }
+
+                        
 
 a:link, a:visited, a:active {
     text-decoration: none;
@@ -140,68 +120,62 @@ a:hover{
     text-decoration: underline overline;
     color: #8b0000;
     background-color: #ffdab9;
-    font-size: 24px;
-    
+    font-size: 2.5vw;
     }
 
+#map-responsive {
+    overflow:visible;
+    position: relative;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    
+    
+}
 
+#map-responsive > iframe {
+    height: 80%;
+    width:80%;
+    position:absolute;
+    padding-left: 20px;
+}
+
+
+.redes {
+    width: 30%;
+    height:30vh;
+    float: left;
+    align-items: center;
+    padding-top: 20px;
+    
+}
 
 .social{
-
-        width: 40px;
-        height: 40px;
-        right: 155px;
-        text-align: center;
-        line-height: 40px;
-        background: #ddd;
-        margin: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background .3s linear;
-
-    }
-
-.sociais {
-    float: left;
-
+    background: #ddd;
+    margin: 10px;
 }
 
-
-.footer {
-    width: 300px;
-    height:70%;
-    display: inline;
-    justify-content:right;
-    align-items: center;
-    background:"";
-    float: left;
-    margin-top: 50%;
-
-    }
-
-
-.footer h2{
+.redes h2{
     color: rgb(24, 22, 22);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 2em;
 }
 
-.footer .sociais{
-
+.redes .sociais{
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 .sociais .social{
-
-    width: 40px;
-    height: 40px;
+    width: 5vw;
+    height: 5vh;
     text-align: center;
-    line-height: 40px;
-    background:"";
+    line-height: 2;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background .3s linear;
-
+    transition: all .3s linear; /*troquei background por all*/
     }
 
 .sociais .social a{
@@ -221,3 +195,28 @@ color: #fff;
 
 }
 
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* CSS curso*/
+
+
+
+table {
+    border-collapse: collapse;
+    width: 60vw;
+    margin: auto;
+    padding: 5px;
+    background-color: #f3d3ae44;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-padrao);
+}
