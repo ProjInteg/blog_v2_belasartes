@@ -14,11 +14,13 @@
 
     <body>
         <div class="borda">
-            <h1 id="titulo">Cadastro APBA</h1>
-            <div id="btn-container">
-                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
-            </div>
+            <header>
+                <h1>Cadastro APBA</h1>
+                <div id="btn-container">
+                    <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                    <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+                </div>
+            </header>
 
             <form action=" " method="post">
                 {% csrf_token %}

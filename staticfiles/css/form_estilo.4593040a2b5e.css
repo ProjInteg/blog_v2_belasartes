@@ -15,14 +15,13 @@
 html, body {
     min-height: 100vh;
     font-family: var(--font-padrao);
-    
 }
 
 h1 {
     font-family: var(--font-opcional);
     color: #592A0E;
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 5vw;
     font-weight: bold;
 }
 
@@ -106,14 +105,12 @@ a:hover{
     text-shadow: none;
 }
 
-div {
+/*div {
     margin: 20px;
-}
+}*/
 
 .id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
-    height: 4vh;
-    width: 50vw;
-    font-size: 2em;
+    height: 20px;
 }
 
 

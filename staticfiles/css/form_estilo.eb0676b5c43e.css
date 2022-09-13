@@ -15,7 +15,6 @@
 html, body {
     min-height: 100vh;
     font-family: var(--font-padrao);
-    
 }
 
 h1 {
@@ -111,9 +110,8 @@ div {
 }
 
 .id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
-    height: 4vh;
+    height: 20px;
     width: 50vw;
-    font-size: 2em;
 }
 
 

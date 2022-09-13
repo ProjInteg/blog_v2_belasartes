@@ -1,49 +1,67 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-opcional: 'Bebas Neue', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+    
+}
 
-#titulo {
-    font-family: sans-serif;
+h1 {
+    font-family: var(--font-opcional);
     color: #592A0E;
     text-align: center;
+    font-size: 3.5vw;
+    font-weight: bold;
 }
 
-p {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #260401;
-
-}
 
 body{
     background-color:#f5e4c4;
-    font-family: sans-serif;
     font-size: 1em;
     color: #592A0E;
-    margin-left: 25%;
     margin-top: 2%;
     justify-content: center;
 
 }
 
 .borda {
-    height: 800px;
-    width: 500px;
-    margin-left: 20px;
+    width: 75%;
+    margin: auto;
     border: 5px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
 }
+
+header {
+    padding-top: 10px;
+    margin: auto;
+}
+
 button {
-    font-size: 16px;
+    font-size: 1.5vw;
 }
 
 #btn-container {
     text-align: end;
+    padding-right: 5px;
+    padding-bottom: 5px;;
+}
+
+a {
+    padding-left: 10px;
 }
 
 a:link, a:visited, a:active {
@@ -62,7 +80,6 @@ a:hover{
     color: #8b0000;
     background-color: #ffdab9;
     font-size: 24px;
-
     }
 
 
@@ -94,23 +111,21 @@ div {
 }
 
 .id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
-    height: 20px;
+    height: 4vh;
+    width: 50vw;
+    font-size: 2em;
 }
 
-.id-nome {
-    width: 50%;
+
+label {
+    padding-left: 5px;
 }
 
-.borda {
-    height: 900px;
-    width: 700px;
-    border: 5px;
-    margin-left: 20px;
-    border-color:rgba(51, 5, 5, 0.877);
-    border-radius: 10px;
-    border-style: double;
-    align-item: center;
+.form-group{
+    padding-left: 5px;
 }
+
+
 
 
 
