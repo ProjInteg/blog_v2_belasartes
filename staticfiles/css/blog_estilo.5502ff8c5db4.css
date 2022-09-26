@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-    background-image: url(../img/figura11.jpg);
+    background-image: url("../img/figura11.b0207c8fcc73.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,54 +36,48 @@ body {
 
 div.borda {
     width: 82%;
-    max-width: 980px;
+    height: 100%;
     margin: 0 auto;
     border: 5px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
-    padding-bottom: 5px;
+    
 }
-
-
-.cabeçalho {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     max-width: 980px;
-    margin-top: 5px;
-    margin-left: 5px;
-    
-}
+    margin: auto;
+    /*text-align: center;
+    padding-top: 10px;
+    margin: auto;*/
+}   
 
-
-.cabeçalho > h1 {
+header > h1 {
     font-family: var(--font-opcional);
-    padding-top: 50px;
+    font-size: 5vw;
+    /*padding-top: 50px;*/
     font-weight: bold;
 }
-
-.cabeçalho >p {
+/*
+header >p {
     padding-bottom: 50px;
-}
+}*/
 
 
 img {
     opacity: 0.5;
-    margin-left: 5px;
-    max-width: 100%;
-    max-height: 100%;
     float: left;
-    padding: 15px 5;
+    margin-left: 20px;
+    /*max-width: 100%;
+    max-height: 100%;*/
+    padding: 15px 0;
     
 }
-#titulo {
-    display: inline-block;
-    text-align: center;
-    padding-left: 5px;
-}
-
+/*
 #btn-container {
     text-align: end;
     padding-right: 5px;
@@ -92,37 +86,37 @@ img {
 }
 
 button {
-    font-size: 1.2rem;
-}
-
-.conteudo {
-    width: 90%;
-    max-width: 980px;
-    padding-bottom: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
- 
-}
-
-
+    font-size: 1.5vw;
+}*/
 
 #menu {
-    padding-top: 20px;
-    text-align: center;
+    float: left;
+    width: 30%;
     line-height: 2.5;
-    font-size: 1.5rem;
+    font-size: 3vw;
+    text-align: center;
     }
 
-
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;  
+}
 
 #principal {
     color:black;
-    font-size: 2rem;
-    line-height: 4rem;
-    font-weight: bold;
+    line-height: 2;
+    font-size: 3.5vw;
+    display: block;
+    margin-left: 30%;
+}
+
+#principal > p {
     text-align: center;
-   
+    font-weight: bold;
 }
 
                         
@@ -142,35 +136,34 @@ a:hover{
     text-decoration: underline overline;
     color: #8b0000;
     background-color: #ffdab9;
-    font-size: 2rem;
+    font-size: 2.5vw;
     }
 
 #map-responsive {
     overflow:visible;
     position: relative;
+    height: 30vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-        
+    
+    
 }
 
 #map-responsive > iframe {
     height: 80%;
     width:80%;
     position:absolute;
+    padding-left: 20px;
 }
 
 
 .redes {
+    width: 30%;
+    height:25vh;
+    float: left;
     align-items: center;
-
-}
-
-.redes h2{
-    color: rgb(24, 22, 22);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2em;
+    padding-top: 20px;
+    
 }
 
 .social{
@@ -179,7 +172,12 @@ a:hover{
     padding-top: 5px;
 }
 
-
+.redes h2{
+    color: rgb(24, 22, 22);
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 2em;
+}
 
 .sociais{
     display: flex;
@@ -188,17 +186,18 @@ a:hover{
 
 .sociais .social{
     width: 5vw;
+    height: 4vh;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .3s linear; 
+    transition: all .3s linear; /*troquei background por all*/
     }
 
 .sociais .social a{
 
     color: rgb(12, 12, 12);
-    font-size: 2rem;
+    font-size: 1.5em;
     transition: color .3s linear;
 }
 
@@ -214,34 +213,20 @@ color: #fff;
 
 footer {
     text-align: center;
-    font-size: 1.3rem;
-    margin-top: 10px;
-    
+    font-size: 0.8em;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 /* CSS curso*/
 
-#borda_curso {
-    width: 82%;
-    max-width: 980px;
-    margin: auto;
-    padding-top: 10px;
-}
-
-#curse {
-    font-family: var(--font-opcional);
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
 
 
 table {
     border-collapse: collapse;
-    width: 90%;
-    max-width: 980px;
+    width: 60vw;
     margin: auto;
-    padding-top: 5px;
+    padding: 5px;
     background-color: #f3d3ae44;
 }
 
@@ -250,31 +235,4 @@ th, td {
     padding: 10px;
     text-align: center;
     font-family: var(--font-padrao);
-    font-size: 1.5rem;
 }
-
-/* media queries*/
-@media (max-width: 768px) {
-    html {
-        font-size: 50%;
-    }
-   #map-responsive {
-       height: 20vh;
-   }
-}
-
-
-
-@media (max-width: 375px) {
-    .conteudo {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 330px ) {
-    #map-responsive {
-        width: 80vw;
-    }
-    
-}
-

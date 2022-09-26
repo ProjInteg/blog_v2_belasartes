@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="{% static 'css/blog_estilo.css' %}">
 </head>
 <body>
-    <div class="borda">
+    <div id="borda_curso">
         <header>
             <picture>
                 <source media="(max-width: 800px)" srcset="{% static 'img/logo_p.jpg' %}">
                 <img src="{% static 'img/logo.jpg' %}" alt="Logotipo APBA">
              </picture>
-                <h1> Cursos APBA </h1>
+                <div id="curse">
+                    <h1> Cursos APBA </h1>
+                </div>
 
             <div id="btn-container">
                 <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>

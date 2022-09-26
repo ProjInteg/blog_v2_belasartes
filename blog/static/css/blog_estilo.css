@@ -8,13 +8,21 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    
+    outline: 0;
 }
+
+html {
+    font-size: 62,5%;
+}
+
 html, body {
-    min-height: 100vh;
+    height: 100vh;
     font-family: var(--font-padrao);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -23,43 +31,57 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-size: 1.6rem;
 }
 
 div.borda {
     width: 82%;
-    height: 100%;
+    max-width: 980px;
     margin: 0 auto;
     border: 5px;
     border-color:rgba(51, 5, 5, 0.877);
     border-radius: 10px;
     border-style: double;
+    padding-bottom: 5px;
+}
+
+
+.cabeçalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 980px;
+    margin-top: 5px;
+    margin-left: 5px;
     
 }
-header {
-    text-align: center;
-    padding-top: 10px;
-    margin: auto;
-}   
 
-header > h1 {
+
+.cabeçalho > h1 {
     font-family: var(--font-opcional);
-    font-size: 5vw;
     padding-top: 50px;
     font-weight: bold;
 }
 
-header >p {
+.cabeçalho >p {
     padding-bottom: 50px;
 }
 
 
 img {
     opacity: 0.5;
-    float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     max-width: 100%;
     max-height: 100%;
+    float: left;
+    padding: 15px 5;
     
+}
+#titulo {
+    display: inline-block;
+    text-align: center;
+    padding-left: 5px;
 }
 
 #btn-container {
@@ -70,37 +92,37 @@ img {
 }
 
 button {
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
+
+.conteudo {
+    width: 90%;
+    max-width: 980px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+ 
+}
+
+
 
 #menu {
-    float: left;
-    width: 30%;
-    line-height: 2.5;
-    font-size: 2vw;
+    padding-top: 20px;
     text-align: center;
+    line-height: 2.5;
+    font-size: 1.5rem;
     }
 
-main {
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    min-width: 300px;
-    max-width: 1000px;
-    margin: auto;  
-}
+
 
 #principal {
     color:black;
-    line-height: 2;
-    font-size: 2.5vw;
-    display: block;
-    margin-left: 30%;
-}
-
-#principal > p {
-    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem;
     font-weight: bold;
+    text-align: center;
+   
 }
 
                         
@@ -120,34 +142,35 @@ a:hover{
     text-decoration: underline overline;
     color: #8b0000;
     background-color: #ffdab9;
-    font-size: 2.5vw;
+    font-size: 2rem;
     }
 
 #map-responsive {
     overflow:visible;
     position: relative;
-    height: 30vh;
     display: flex;
     align-items: center;
-    
-    
+    justify-content: center;
+        
 }
 
 #map-responsive > iframe {
     height: 80%;
     width:80%;
     position:absolute;
-    padding-left: 20px;
 }
 
 
 .redes {
-    width: 30%;
-    height:25vh;
-    float: left;
     align-items: center;
-    padding-top: 20px;
-    
+
+}
+
+.redes h2{
+    color: rgb(24, 22, 22);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2em;
 }
 
 .social{
@@ -156,12 +179,7 @@ a:hover{
     padding-top: 5px;
 }
 
-.redes h2{
-    color: rgb(24, 22, 22);
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 2em;
-}
+
 
 .sociais{
     display: flex;
@@ -170,18 +188,17 @@ a:hover{
 
 .sociais .social{
     width: 5vw;
-    height: 4vh;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .3s linear; /*troquei background por all*/
+    transition: all .3s linear; 
     }
 
 .sociais .social a{
 
     color: rgb(12, 12, 12);
-    font-size: 1.5em;
+    font-size: 2rem;
     transition: color .3s linear;
 }
 
@@ -197,20 +214,34 @@ color: #fff;
 
 footer {
     text-align: center;
-    font-size: 0.8em;
-    padding: 5px;
-    margin-bottom: 10px;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    
 }
 
 /* CSS curso*/
 
+#borda_curso {
+    width: 82%;
+    max-width: 980px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#curse {
+    font-family: var(--font-opcional);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 table {
     border-collapse: collapse;
-    width: 60vw;
+    width: 90%;
+    max-width: 980px;
     margin: auto;
-    padding: 5px;
+    padding-top: 5px;
     background-color: #f3d3ae44;
 }
 
@@ -219,4 +250,31 @@ th, td {
     padding: 10px;
     text-align: center;
     font-family: var(--font-padrao);
+    font-size: 1.5rem;
 }
+
+/* media queries*/
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+   #map-responsive {
+       height: 20vh;
+   }
+}
+
+
+
+@media (max-width: 375px) {
+    .conteudo {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 330px ) {
+    #map-responsive {
+        width: 80vw;
+    }
+    
+}
+
