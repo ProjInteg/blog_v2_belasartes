@@ -91,9 +91,6 @@ img {
     
 }
 
-button {
-    font-size: 1.5rem;
-}
 
 .conteudo {
     width: 90%;
@@ -153,7 +150,7 @@ a:hover{
 }
 
 #map-responsive > iframe {
-    height: 80%;
+    height: 100%;
     width:80%;
     position:absolute;
 }
@@ -164,7 +161,7 @@ a:hover{
 
 }
 
-.redes h2{
+.redes h4{
     color: rgb(24, 22, 22);
     font-size: 1.5rem;
     text-align: center;
@@ -260,7 +257,6 @@ th, td {
        height: 20vh;
    }
 }
-
 
 
 @media (max-width: 375px) {
