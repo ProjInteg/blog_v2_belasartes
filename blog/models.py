@@ -2,6 +2,11 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+SEXO_CHOICES = (
+    ('M', 'Masculino'),
+    ('f', 'Feminino'),
+    ('n', 'Não Informar')
+)
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -21,6 +26,8 @@ class Post(models.Model):
 class Associado(models.Model):
     numero_associado = models.CharField(max_length=10)
     nome = models.CharField(max_length=40)
+    sexo = models.CharField(max_length=1, choices=SEXO_CHOICES)
+    data_nascimento = models.DateField()
     telefone = models.CharField(max_length=15, blank=True)
     celular = models.CharField(max_length=15)
     email = models.EmailField(null=False)

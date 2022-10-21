@@ -2,6 +2,11 @@ from django import forms
 from django.core.exceptions import ValidationError
 from blog.models import Associado
 
+SEXO_CHOICES = (
+    ('M', 'Masculino'),
+    ('f', 'Feminino'),
+    ('n', 'Não Informar')
+)
 
 class AssociadoForm(forms.ModelForm):
     class Meta:
@@ -12,6 +17,8 @@ class AssociadoForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields['nome'].widget.attrs.update({'class': 'id-nome'})
         self.fields['numero_associado'].widget.attrs.update({'class': 'id-nassoc'})
+        self.fields['sexo'].widget.attrs.update({'class': 'id-sexo'})
+        self.fields['data_nascimento'].widget.attrs.update({'class': 'mask-data'})
         self.fields['telefone'].widget.attrs.update({'class': 'mask-fone'})
         self.fields['celular'].widget.attrs.update({'class': 'mask-cel'})
         self.fields['email'].widget.attrs.update({'class': 'id-email'})

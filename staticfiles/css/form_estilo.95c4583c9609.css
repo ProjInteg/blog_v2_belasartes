@@ -122,15 +122,17 @@ div {
     flex-direction: column;
 }
 
-.id-nome, .id-email, .mask-cel, .mask-fone, .id-nassoc, .mask-data, .id-sexo  {
+.id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
     height: 4vh;
     width: 50vw;
     font-size: 1.5rem;
 }
 
-.id-nassoc, .mask-data, .id-sexo, .mask-fone, .mask-cel {
+.mask-data, id-sexo {
+    height: 4vh;
     width: 25vw;
-  }
+    font-size: 1.5rem;
+}
 
 
 label {

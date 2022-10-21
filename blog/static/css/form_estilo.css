@@ -116,20 +116,28 @@ div {
     margin: 20px;
 }
 
-.id-nome, .id-email, .id-nassoc, .mask-cel, .mask-fone {
+.form-group{
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.id-nome, .id-email, .mask-cel, .mask-fone, .id-nassoc, .mask-data, .id-sexo  {
     height: 4vh;
     width: 50vw;
-    font-size: 2em;
+    font-size: 1.5rem;
 }
+
+.id-nassoc, .mask-data, .id-sexo, .mask-fone, .mask-cel {
+    width: 25vw;
+  }
 
 
 label {
     padding-left: 5px;
 }
 
-.form-group{
-    padding-left: 5px;
-}
+
 
 
 
