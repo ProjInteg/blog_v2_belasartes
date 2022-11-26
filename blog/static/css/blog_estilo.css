@@ -78,6 +78,22 @@ img {
     padding: 15px 5;
     
 }
+
+button#res a:active, a:link {
+    color:black;
+}
+
+button#res a:visited{
+    color: rgb(121, 44, 44);
+    }
+button#res a:hover{
+    text-decoration: underline overline;
+    color: red;
+    background-color: white;
+    
+    }
+
+
 #titulo {
     display: inline-block;
     text-align: center;
@@ -269,6 +285,8 @@ th, td {
     #map-responsive {
         width: 80vw;
     }
+    
+    
     
 }
 

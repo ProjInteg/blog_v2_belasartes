@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-    background-image: url(../img/figura11.jpg);
+    background-image: url("../img/figura11.b0207c8fcc73.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,7 +90,7 @@ button#res a:hover{
     text-decoration: underline overline;
     color: red;
     background-color: white;
-    
+    font-size: 1.5rem;
     }
 
 
@@ -285,8 +285,6 @@ th, td {
     #map-responsive {
         width: 80vw;
     }
-    
-    
     
 }
 
