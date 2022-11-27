@@ -1,6 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
 from blog.models import Associado
+from datetime import date
 
 SEXO_CHOICES = (
     ('M', 'Masculino'),
@@ -30,3 +31,11 @@ class AssociadoForm(forms.ModelForm):
             raise ValidationError("Digite seu nome completo")
         else:
             return nome
+
+    def clean(self):
+        data_atual = date.today()
+        data_nascimento = self.cleaned_data['data_nascimento']
+        if data_nascimento >= data_atual:
+            raise ValidationError('A data de nascimento não pode ser maior ou igual a data atual')
+        else:
+            return data_nascimento
