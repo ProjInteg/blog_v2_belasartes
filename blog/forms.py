@@ -32,10 +32,9 @@ class AssociadoForm(forms.ModelForm):
         else:
             return nome
 
-    def clean(self):
-        data_atual = date.today()
-        data_nascimento = self.cleaned_data['data_nascimento']
-        if data_nascimento >= data_atual:
+    def clean_dt_nasc(self):
+        dt_nasc = self.cleaned_data.get['data_nascimento']
+        if dt_nasc >= date.today():
             raise ValidationError('A data de nascimento não pode ser maior ou igual a data atual')
         else:
-            return data_nascimento
+            return dt_nasc
