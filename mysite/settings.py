@@ -29,7 +29,7 @@ SECRET_KEY = '%1e!ef=$15mkncdkgw_wlshd5k=(rb6g#ji3yn^0i_ryu(+6e-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = ['*']
