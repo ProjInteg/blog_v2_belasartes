@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'heroku_5f43538c673bfde',
-            'USER': 'b2c05faf4c2dfd',
-            'PASSWORD': 'f3f5d418',
-            'HOST': 'us-cdbr-east-05.cleardb.net',
-            'PORT': '3306',
+            'NAME': 'railway',
+            'USER': 'root',
+            'PASSWORD': 'k1Bs7l2SrO74EuRAOsdq',
+            'HOST': 'containers-us-west-129.railway.app',
+            'PORT': '6133',
             }
         }
 if 'test' in sys.argv or 'test_coverage' in sys.argv: #Covers regular testing and django-coverage
@@ -142,3 +142,12 @@ STATICFILES_DIRS = [
 
 
 django_heroku.settings(locals())
+'''
+Configurações antigas do BD
+'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'heroku_5f43538c673bfde',
+            'USER': 'b2c05faf4c2dfd',
+            'PASSWORD': 'f3f5d418',
+            'HOST': 'us-cdbr-east-05.cleardb.net',
+            'PORT': '3306','''
