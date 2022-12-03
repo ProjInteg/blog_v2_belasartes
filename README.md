@@ -22,7 +22,7 @@ Projeto em construção
 
 ## Links
  
-https://belasartes.herokuapp.com
+belas-artes.up.railway.app
  
  
 
