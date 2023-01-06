@@ -151,3 +151,5 @@ Configurações antigas do BD
             'PASSWORD': 'f3f5d418',
             'HOST': 'us-cdbr-east-05.cleardb.net',
             'PORT': '3306','''
+
+CSRF_TRUSTED_ORIGINS = ['https://belas-artes.up.railway.app']
