@@ -90,7 +90,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'railway',
             'USER': 'root',
-            'PASSWORD': 'k1Bs7l2SrO74EuRAOsdq',
+            'PASSWORD': 'NHK2S6Zm5pEstITCZlyA', #'k1Bs7l2SrO74EuRAOsdq'
             'HOST': 'containers-us-west-129.railway.app',
             'PORT': '6133',
             }
