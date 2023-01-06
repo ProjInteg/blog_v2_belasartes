@@ -152,4 +152,4 @@ Configurações antigas do BD
             'HOST': 'us-cdbr-east-05.cleardb.net',
             'PORT': '3306','''
 
-CSRF_TRUSTED_ORIGINS = ['https://belas-artes.up.railway.app']
+#CSRF_TRUSTED_ORIGINS = ['https://belas-artes.up.railway.app']
